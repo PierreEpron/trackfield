@@ -1,283 +1,458 @@
-<script language="JavaScript">
- function Logon()
-   {
-    //alert("Borik");
-    document.Frminfo.action = "Logon.asp?Action=Logon";
-    document.Frminfo.submit();
-   }
-  //**************************
-  //Sub Submit2_onClick
-    //document.Frminfo.action = "Logon.asp?Action=Change"
-    //document.Frminfo.submit()
-  //End Sub
-</script>
 <html>
  <head>
-  <meta content="Microsoft Visual Studio 6.0" name="GENERATOR"/>
   <title>
-   Logon Page
+   Track and Field Statistics
   </title>
   <link href="tfstat.css" rel="stylesheet" type="text/css"/>
+  <script language="JavaScript">
+   function NoPerm()
+  {
+    alert("Sorry, Top 25 lists available to the members only. Please visit Membership page for the instructions.");
+  }
+  </script>
  </head>
- <body alink="#9db8af" bgcolor="#ffffff" bottommargin="5" leftmargin="5" link="#696969" marginheight="5" marginwidth="5" rightmargin="5" text="#000000" topmargin="5" vlink="#829991">
-  <form action="Logon.asp?Action=Logon" id="Frminfo" method="post" name="Frminfo">
-   <table bgcolor="#696969" border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-     <td>
-      <table border="0" cellpadding="5" cellspacing="1" width="100%">
-       <tr align="center" bgcolor="#F3F2EE" valign="top">
-        <td align="center" class="banner">
-         Track and Field Statistics
-        </td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>
-  </form>
+ <body alink="#9db8af" bgcolor="ffffff" bottommargin="5" leftmargin="5" link="#696969" marginheight="5" marginwidth="5" rightmargin="5" text="000000" topmargin="5" vlink="#829991">
+  <table bgcolor="#696969" border="0" cellpadding="0" cellspacing="0" width="100%">
+   <tr>
+    <td>
+     <table border="0" cellpadding="5" cellspacing="1" width="100%">
+      <tr align="center" bgcolor="#F3F2EE" valign="top">
+       <td align="center" class="banner">
+        Track and Field Statistics
+       </td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+  </table>
  </body>
 </html>
 <table border="0" width="100%">
  <tr>
   <td align="left" class="text">
-   <b>
-    Logon Page
-   </b>
+   <a href="Default.asp">
+    Home
+   </a>
+  </td>
+ </tr>
+</table>
+<a href="USAMain.asp?P=F">
+ USA Track&amp;Field
+</a>
+<input class="textbig" name="P" type="hidden" value="F"/>
+<table border="0" cellpadding="2" cellspacing="1" width="100%">
+ <tr>
+  <td align="center" bgcolor="#A6B7B2" class="title" colspan="5" width="100%">
+   Men's Events
   </td>
  </tr>
  <tr>
-  <td bgcolor="#f3f2ee" class="textLogon">
-   <b>
-    <center>
-     Thank you very much for visiting Track and Field Statistics Web Site.
-    </center>
-    If you visited this Web Site before, please don't be surprised that you have to register first. 
-      I do have about 70 hits per day. The only way to keep track of the users is registration.
-      This is a very easy process and will not take much time. It also will help to develop the Network for Statistics enthusiasts.
-      I think it will be valuable for everybody to know more about each other and to be able to share information.
-      Any additions, corrections, as well as suggestions are always welcome.
-   </b>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MA1&amp;P=F">
+    100 m
+   </a>
+   <a href="events.asp?EventCode=MA0&amp;P=F">
+    100 y
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MA2&amp;P=F">
+    200 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MA3&amp;P=F">
+    400 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MA4&amp;P=F">
+    800 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MA5&amp;P=F">
+    1500 m
+   </a>
   </td>
  </tr>
-</table>
-<!--<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
-   <TR>
-      <td><img src="Radcliffe.jpg" WIDTH="75" HEIGHT="45"></td>
-      <td><img src="Isinbayeva.jpg" WIDTH="75" HEIGHT="45"></td>
-   </TR>
-</Table> -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
- <td bgcolor="#A6B7B2">
-  <center>
-   <b class="textbig">
-    <font color="black" size="2">
-     Athletics - Present and Past
-    </font>
-   </b>
-  </center>
- </td>
-</table>
-<table border="0" cellpadding="2" cellspacing="2" width="100%">
  <tr>
-  <td bgcolor="#f3f2ee" valign="top" width="60%">
-   <table bgcolor="#f3f2ee" width="100%">
-    <tr>
-     <td>
-      <h5>
-       If you like Track and Field Statistics you will be able to enjoy:
-      </h5>
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-      <font color="blue" size="2">
-       <b>
-        •
-       </b>
-      </font>
-      Very intensive statistical information about each Track and Field event.
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-      <font color="blue" size="2">
-       <b>
-        •
-       </b>
-      </font>
-      The results of all major International Competitions.
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-      <font color="blue" size="2">
-       <b>
-        •
-       </b>
-      </font>
-      Records and Records Progression since 1850.
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-      <font color="blue" size="2">
-       <b>
-        •
-       </b>
-      </font>
-      World Top 25 lists since 1891.
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-      <font color="blue" size="2">
-       <b>
-        •
-       </b>
-      </font>
-      USA T&amp;F Statistics (National Championships, Olympic Trials, Top 10 lists).
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-      <font color="blue" size="2">
-       <b>
-        •
-       </b>
-      </font>
-      A very powerful Search Engine (more than 30,000 Athletes' Profiles).
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-      <font color="blue" size="2">
-       <b>
-        •
-       </b>
-      </font>
-      Field results displayed in Metric and Imperial (English) systems.
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-      <font color="blue" size="2">
-       <b>
-        •
-       </b>
-      </font>
-      The best Collection of Track and Field links.
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-      And much more...
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-     </td>
-    </tr>
-    <tr>
-     <td class="textbig" nowrap="">
-     </td>
-    </tr>
-   </table>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MA6&amp;P=F">
+    1 Mile
+   </a>
   </td>
-  <td bgcolor="#f3f2ee" valign="top" width="40%">
-   <table bgcolor="#f3f2ee" width="100%">
-    <tr>
-     <td>
-      <table bgcolor="#f3f2ee" width="100%">
-       <tr>
-        <td colspan="2" nowrap="">
-         <center>
-          <h5>
-           Please Enter User Name and Password:
-          </h5>
-         </center>
-        </td>
-       </tr>
-       <tr>
-        <td align="right" class="textbig" colspan="2">
-         User Name :
-         <input class="textbig" name="txtUserID"/>
-        </td>
-       </tr>
-       <tr>
-        <td align="right" class="textbig" colspan="2">
-         Password :
-         <input class="textbig" name="txtPassword" type="password"/>
-        </td>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-        <td align="right" colspan="2">
-         <input class="button" id="Submit1" name="Submit1" onclick="Logon()" style="WIDTH: 48px; COLOR: black; HEIGHT: 22px" type="button" value="Login"/>
-        </td>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-        <td align="right" colspan="2">
-         <a class="textbig" href="NewUser.asp" style="COLOR: blue">
-          New User? Register Now
-         </a>
-        </td>
-       </tr>
-       <tr>
-        <td align="right" colspan="2">
-         <a class="textbig" href="ChangeInfo.asp" style="COLOR: blue">
-          Forgot your user name or password?
-         </a>
-        </td>
-       </tr>
-       <tr>
-        <td align="right" colspan="2">
-         <a class="textbig" href="ChangeInfo.asp" style="COLOR: blue">
-          Update your information.
-         </a>
-        </td>
-       </tr>
-       <tr>
-        <td>
-        </td>
-       </tr>
-       <tr>
-        <td align="right" class="textbig" colspan="2">
-         <b>
-          7016
-         </b>
-         Users Registered since Nov 19, 2004.
-        </td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MA7&amp;P=F">
+    5000 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MA8&amp;P=F">
+    10000 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MA9&amp;P=F">
+    Marathon (42.195 km.)
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MB1&amp;P=F">
+    110 m Hurdles
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MB2&amp;P=F">
+    400 m Hurdles
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MB3&amp;P=F">
+    3000 m Steeplechase
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MC1&amp;P=F">
+    4 x 100 m Relay
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MC2&amp;P=F">
+    4 x 400 m Relay
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MC3&amp;P=F">
+    , 4 x 400 m Relay
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=ME1&amp;P=F">
+    20 km Road Walk
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=ME2&amp;P=F">
+    50 km Road Walk
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MF1&amp;P=F">
+    High Jump
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MF2&amp;P=F">
+    Pole Vault
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MF3&amp;P=F">
+    Long Jump
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MF4&amp;P=F">
+    Triple Jump
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MF5&amp;P=F">
+    Shot Put
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MF6&amp;P=F">
+    Discus Throw
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MF7&amp;P=F">
+    Hammer Throw
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MF8&amp;P=F">
+    Javelin Throw
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=MF9&amp;P=F">
+    Decathlon
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" width="20%">
+  </td>
+  <td bgcolor="#F3F2EE" class="event" width="20%">
+  </td>
+  <td bgcolor="#F3F2EE" class="event" width="20%">
+  </td>
+  <td bgcolor="#F3F2EE" class="event" width="20%">
   </td>
  </tr>
 </table>
-<center>
- <b class="text">
-  Any problems to enter the system, please send Email to
-  <a href="mailto:MichaelNonna@Erols.com">
-   <font color="blue" style="FONT-SIZE: 10px;">
-    MichaelNonna@Erols.com
-   </font>
-  </a>
- </b>
-</center>
-<script language="JavaScript">
- <!--
-  document.all.item("txtUserID").focus();
-  //-->
-</script>
+<br/>
+<table border="0" cellpadding="2" cellspacing="1" width="100%">
+ <tr>
+  <td align="center" bgcolor="#A6B7B2" class="title" colspan="5" width="100%">
+   Women's Events
+  </td>
+ </tr>
+ <tr>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WA1&amp;P=F">
+    100 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WA2&amp;P=F">
+    200 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WA3&amp;P=F">
+    400 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WA4&amp;P=F">
+    800 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WA5&amp;P=F">
+    1500 m
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WA6&amp;P=F">
+    3000 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WA7&amp;P=F">
+    5000 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WA8&amp;P=F">
+    10000 m
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WA9&amp;P=F">
+    Marathon (42.195 km.)
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WB1&amp;P=F">
+    80/100 m Hurdles
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WB2&amp;P=F">
+    400 m Hurdles
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WB3&amp;P=F">
+    3000 m Steeplechase
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WC1&amp;P=F">
+    4 x 100 m Relay
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WC2&amp;P=F">
+    4 x 400 m Relay
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WE1&amp;P=F">
+    10 km Road Walk
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WE2&amp;P=F">
+    20 km Road Walk
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WE3&amp;P=F">
+    50 km Road Walk
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WF1&amp;P=F">
+    High Jump
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WF2&amp;P=F">
+    Pole Vault
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WF3&amp;P=F">
+    Long Jump
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WF4&amp;P=F">
+    Triple Jump
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WF5&amp;P=F">
+    Shot Put
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WF6&amp;P=F">
+    Discus Throw
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WF7&amp;P=F">
+    Hammer Throw
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WF8&amp;P=F">
+    Javelin Throw
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td bgcolor="#F3F2EE" class="event" nowrap="" width="20%">
+   <a href="events.asp?EventCode=WF9&amp;P=F">
+    Pentathlon/Heptathlon
+   </a>
+  </td>
+  <td bgcolor="#F3F2EE" class="event" width="20%">
+  </td>
+  <td bgcolor="#F3F2EE" class="event" width="20%">
+  </td>
+  <td bgcolor="#F3F2EE" class="event" width="20%">
+  </td>
+  <td bgcolor="#F3F2EE" class="event" width="20%">
+  </td>
+ </tr>
+</table>
+<br/>
+<table border="0" cellpadding="2" cellspacing="1" width="100%">
+ <tr>
+  <td align="center" bgcolor="#A6B7B2" class="title" colspan="3" width="45%">
+   Games
+  </td>
+  <td align="center" bgcolor="#A6B7B2" class="title" colspan="4" width="45%">
+   Championships
+  </td>
+  <td align="center" bgcolor="#A6B7B2" class="title" width="10%">
+   Cups
+  </td>
+ </tr>
+ <tr height="20">
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="16%">
+   <a href="Tournaments.asp?TourCode=O&amp;Year=2016&amp;Gender=M&amp;TF=T&amp;P=F">
+    Olympic
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="16%">
+   <a href="Tournaments.asp?TourCode=B&amp;Year=1930&amp;Gender=M&amp;TF=T&amp;P=F">
+    Commonwealth
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="16%">
+   <a href="Tournaments.asp?TourCode=P&amp;Year=1951&amp;Gender=M&amp;TF=T&amp;P=F">
+    Pan American
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="11%">
+   <a href="Tournaments.asp?TourCode=W&amp;Year=1983&amp;Gender=M&amp;TF=T&amp;P=F">
+    World
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="11%">
+   <a href="Tournaments.asp?TourCode=I&amp;Year=1985&amp;Gender=M&amp;TF=T&amp;P=F">
+    World Indoor
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="11%">
+   <a href="Tournaments.asp?TourCode=E&amp;Year=1934&amp;Gender=M&amp;TF=T&amp;P=F">
+    European
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="12%">
+   <a href="Tournaments.asp?TourCode=U&amp;Year=1970&amp;Gender=M&amp;TF=T&amp;P=F">
+    European Indoor
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="19%">
+   <a href="Tournaments.asp?TourCode=C&amp;Year=1977&amp;Gender=M&amp;TF=T&amp;P=F">
+    IAAF World
+   </a>
+  </td>
+ </tr>
+</table>
+<br/>
+<table border="0" cellpadding="2" cellspacing="1" width="100%">
+ <tr>
+  <td align="center" bgcolor="#A6B7B2" class="title" colspan="3" width="50%">
+   Records
+  </td>
+  <td align="center" bgcolor="#A6B7B2" class="title" width="20%">
+   Athletes
+  </td>
+  <td align="center" bgcolor="#A6B7B2" class="title" nowrap="" width="30%">
+   Top 25 Lists (1891-2019)
+  </td>
+ </tr>
+ <tr height="20">
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="20%">
+   <a href="Records.asp?RecCode=WR&amp;Gender=M&amp;P=F">
+    World &amp; Championships
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="15%">
+   <a href="Records.asp?RecCode=AF&amp;Gender=M&amp;P=F">
+    Continental
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="15%">
+   <a href="RecProg_All.asp?RecCode=WR&amp;Gender=M&amp;P=F">
+    Progression
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="20%">
+   <a href="Search.asp?P=F">
+    Search
+   </a>
+  </td>
+  <td align="center" bgcolor="#F3F2EE" class="event" nowrap="" valign="middle" width="30%">
+   <!--<a href="JavaScript:NoPerm()">Top 10 Lists by Year</a>-->
+   <a href="Years.asp?Year=2019&amp;Gender=M&amp;TF=T&amp;P=F">
+    Top 25 Lists by Year
+   </a>
+  </td>
+ </tr>
+</table>

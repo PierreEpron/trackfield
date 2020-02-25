@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 HTML_DIR = 'html/'
 JSON_DIR = 'json/'
-SLEEP = 1
+SLEEP = 5
 
 def get_html(url, name, parser='html.parser'):
     req = requests.get(url)

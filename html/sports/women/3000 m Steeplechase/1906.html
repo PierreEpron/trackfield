@@ -1,0 +1,48 @@
+<html>
+ <head>
+  <title>
+   Track and Field Statistics
+  </title>
+  <link href="tfstat.css" rel="stylesheet" type="text/css"/>
+  <script language="JavaScript">
+   function CheckID(iID,sGender,sEvent,sYear,sTF){
+	  var sPage = "Back";
+	  if (iID == 0)  {
+	    alert("Sorry, no profile for this athlete.");
+	    }
+	  else{
+	   window.close();
+	   window.opener.location.href="Profile.asp?ID=" + iID + "&Gender=" + sGender + "&Page=" + sPage + "&EventCode=" + sEvent + "&Year=" + sYear + "&TF=" + sTF;
+	  // document.location.href = "Profile.asp?ID=" + iID + "&Gender=" + sGender + "&Page=" + sPage + "&EventCode=" + sEvent + "&Year=" + sYear + "&TF=" + sTF;   
+	    
+	    }
+	}
+	function closeWindow(){
+	  //window.close()
+	}
+  </script>
+ </head>
+ <body alink="#9db8af" bgcolor="ffffff" bottommargin="5" leftmargin="5" link="#696969" marginheight="5" marginwidth="5" onblur="javascript:closeWindow()" rightmargin="5" text="000000" topmargin="5" vlink="#829991">
+  <form id="form1" name="form1">
+   <table align="center" border="0" cellpadding="1" cellspacing="1" class="result" style="" width="75%">
+    <tr>
+     <td align="center" bgcolor="#F3F2EE" class="text" colspan="8" nowrap="">
+      <b>
+       1906
+      </b>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" bgcolor="#A6B7B2" class="text" colspan="8" nowrap="">
+      <b>
+       60 m
+      </b>
+     </td>
+    </tr>
+   </table>
+  </form>
+ </body>
+</html>
+<script language="JavaScript">
+ window.focus();
+</script>

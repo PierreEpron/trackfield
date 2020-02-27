@@ -30,18 +30,19 @@ def get_dates_from_interval(interval):
 def get_gender_char(gender):
     return 'M' if gender == 'men' else 'W'
 
-
-
-
-
-
-
-
-
-
-
-
-
+# c = 0
+# # dirpath, dirnames, filenames
+# for dp, dns, fns in os.walk('html'):
+#     for fn in fns:
+#         c += 1
+#         td_count = []
+#         with open('%s/%s'%(dp, fn)) as f:
+#             soup = read_html(fn)
+#             trs = soup.find_all('table')[0].find_all('tr')[2:]
+#             for tr in trs:
+#                 td_count.append(len(tr.find_all('td')))
+#         print('%s/%s')
+# print(c)
 
 ''' Scrap on first file '''
 

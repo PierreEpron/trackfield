@@ -29,59 +29,82 @@ def get_dates_from_interval(interval):
 def get_gender_char(gender):
     return 'M' if gender == 'men' else 'W'
 
-with open('%ssports.json'%JSON_DIR, 'r', encoding='utf-8') as f:
-    sports = json.loads(f.read())
+
+soup = read_html('html/men/100 m/1891.html')
+trs = soup.find_all('table')[0].find_all('tr')[2:]
+
+res = [['rank', 'name', 'birth_country', 'perf_0', 'perf_1', 'perf_2', 'perf_country', 'date']]
+i = 1
+for tr in soup.find_all('table')[0].find_all('tr')[2:]:
+    res.append([])
+    print('*' * 10)
+    for td in trs[0].find_all('td'):
+        res[i].append(td.text.strip())
+        print(td.text.strip())
+    i += 1
+
+print(res)
+print(len(res[0]))
+
+d = {}
+
+for col in res[0]:
+    d['']
+
+for i in range(1, len(res)):
+    res[i]
+    # for col in res:
+    #     print(col, end='')
+    # print()
 
 
-# get_html(
-#     'http://trackfield.brinkster.net/Year.asp?Year=1950&EventCode=%s&Gender=%s' %
-#     (
-#         get_sport_id(sports['men']['100 y']['url']),
-#         get_gender_char('men')
-#     ),
-#     'test')
-# print('http://trackfield.brinkster.net/results.asp?EventCode=%s&Cycles=27&Cycle=2&Years=%s&Medalist=No&Move=N&P=F' % (
-#         get_sport_id(sports['men']['100 y']['url']), 
-#         sports['men']['100 y']['date'][0]))
 
-c = 0
-for gender in sports.keys():
-    for sport in sports[gender].keys():
-        for year in range(1891, 2020):            
-            c+=1
+df = pd.DataFrame(data=d)
 
-cc = 0
-for gender in sports.keys():
-    _dir = '%s%s'%(HTML_DIR, gender)
-    if not os.path.isdir(_dir):
-        os.mkdir(_dir)
-    for sport in sports[gender].keys():
-        _dir = '%s%s/%s'%(HTML_DIR, gender, sport.replace('/', '_'))
-        if not os.path.isdir(_dir):
-            os.mkdir(_dir)
-        year = 1891
-        while year <= 2020:
-            _dir = '%s%s/%s/%s.html'%(HTML_DIR, gender, sport.replace('/', '_'), year)
-            if os.path.isfile(_dir):
-                print('(%s/%s) - %s - already exist' % (cc, c, _dir))
-            else:
-                time.sleep(SLEEP)
-                try :
-                    print('(%s/%s) - %s - try' % (cc, c, _dir))
-                    get_html(
-                        'http://trackfield.brinkster.net/More.asp?Year=%s&EventCode=%s&Gender=%s&P=T' %
-                        (
-                            year,
-                            get_sport_id(sports[gender][sport]),
-                            get_gender_char(gender)
-                        ),
-                        _dir)
-                except Exception as e: 
-                    print('(%s/%s) - %s - %s' % (cc, c, _dir, e))
-                    year -= 1
-                    cc -= 1
-            year += 1
-            cc += 1
+
+''' DDOS '''
+
+# with open('%ssports.json'%JSON_DIR, 'r', encoding='utf-8') as f:
+#     sports = json.loads(f.read())
+
+# c = 0
+# for gender in sports.keys():
+#     for sport in sports[gender].keys():
+#         for year in range(1891, 2020):            
+#             c+=1
+
+# cc = 0
+# for gender in sports.keys():
+#     _dir = '%s%s'%(HTML_DIR, gender)
+#     if not os.path.isdir(_dir):
+#         os.mkdir(_dir)
+#     for sport in sports[gender].keys():
+#         _dir = '%s%s/%s'%(HTML_DIR, gender, sport.replace('/', '_'))
+#         if not os.path.isdir(_dir):
+#             os.mkdir(_dir)
+#         year = 1891
+#         while year <= 2020:
+#             _dir = '%s%s/%s/%s.html'%(HTML_DIR, gender, sport.replace('/', '_'), year)
+#             if os.path.isfile(_dir):
+#                 print('(%s/%s) - %s - already exist' % (cc, c, _dir))
+#             else:
+#                 time.sleep(SLEEP)
+#                 try :
+#                     print('(%s/%s) - %s - try' % (cc, c, _dir))
+#                     get_html(
+#                         'http://trackfield.brinkster.net/More.asp?Year=%s&EventCode=%s&Gender=%s&P=T' %
+#                         (
+#                             year,
+#                             get_sport_id(sports[gender][sport]),
+#                             get_gender_char(gender)
+#                         ),
+#                         _dir)
+#                 except Exception as e: 
+#                     print('(%s/%s) - %s - %s' % (cc, c, _dir, e))
+#                     year -= 1
+#                     cc -= 1
+#             year += 1
+#             cc += 1
 
 
 

@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 HTML_DIR = 'html/'
 JSON_DIR = 'json/'
 SLEEP = 0
+COLS = ['rank', 'name', 'birth_country', 'perf_0', 'perf_1', 'perf_2', 'perf_country', 'date']
 
 def get_html(url, name, parser='html.parser'):
     req = requests.get(url)
@@ -30,36 +31,36 @@ def get_gender_char(gender):
     return 'M' if gender == 'men' else 'W'
 
 
-soup = read_html('html/men/100 m/1891.html')
-trs = soup.find_all('table')[0].find_all('tr')[2:]
-
-res = [['rank', 'name', 'birth_country', 'perf_0', 'perf_1', 'perf_2', 'perf_country', 'date']]
-i = 1
-for tr in soup.find_all('table')[0].find_all('tr')[2:]:
-    res.append([])
-    print('*' * 10)
-    for td in trs[0].find_all('td'):
-        res[i].append(td.text.strip())
-        print(td.text.strip())
-    i += 1
-
-print(res)
-print(len(res[0]))
-
-d = {}
-
-for col in res[0]:
-    d['']
-
-for i in range(1, len(res)):
-    res[i]
-    # for col in res:
-    #     print(col, end='')
-    # print()
 
 
 
-df = pd.DataFrame(data=d)
+
+
+
+
+
+
+
+
+
+''' Scrap on first file '''
+
+# soup = read_html('html/men/100 m/1891.html')
+# trs = soup.find_all('table')[0].find_all('tr')[2:]
+
+# res = []
+# i = 1
+# for tr in soup.find_all('table')[0].find_all('tr')[2:]:
+#     res.append([])
+#     print('*' * 10)
+#     for td in trs[0].find_all('td'):
+#         res[i].append(td.text.strip())
+#         print(td.text.strip())
+#     i += 1
+
+# print(res)
+# print(len(res[0]))
+
 
 
 ''' DDOS '''

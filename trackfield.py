@@ -6,6 +6,8 @@ from pathlib import Path
 from settings import *
 from scrap import *
 
+Path()
+
 ''' DDOS '''
 
 with open('%ssports_bck.json'%JSON_DIR, 'r', encoding='utf-8') as f:
